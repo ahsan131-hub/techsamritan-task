@@ -9,12 +9,17 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: (
-      <div>
-        Home
-        <Link to={"/inventory"} className="text-blue-900 m-2">
+      <div className="m-10">
+        <Link
+          to={"/inventory"}
+          className="px-5 py-4 m-1 rounded-lg bg-blue-800 border border-blue-700 text-white"
+        >
           Inventory Management
         </Link>
-        <Link to={"/staff"} className="text-blue-900 m-2">
+        <Link
+          to={"/staff"}
+          className="px-5 py-4 m-1 rounded-lg bg-blue-800 border border-blue-700 text-white"
+        >
           Staff Management
         </Link>
       </div>

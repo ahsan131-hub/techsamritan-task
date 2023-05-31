@@ -1,15 +1,14 @@
 import dayjs from "dayjs";
-import ArrowButton from "./Arrowbutton";
+import ArrowButton from "../Arrowbutton";
 import YearPicker from "./YearPicker";
-const TimeSelector = ({ displayTime, setDisplayTime }) => {
+
+const MonthTimeSelector = ({ displayTime, setDisplayTime }) => {
   const handlePrevClick = () => {
-    // Logic to handle previous button click
     setDisplayTime(dayjs(displayTime).subtract(1, "month"));
     console.log("month");
   };
 
   const handleNextClick = () => {
-    // Logic to handle next button click
     setDisplayTime(dayjs(displayTime).add(1, "month"));
     console.log("preve");
   };
@@ -31,4 +30,5 @@ const TimeSelector = ({ displayTime, setDisplayTime }) => {
     </div>
   );
 };
-export default TimeSelector;
+
+export default MonthTimeSelector;

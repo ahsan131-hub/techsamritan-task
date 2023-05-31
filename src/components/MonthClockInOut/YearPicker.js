@@ -1,6 +1,5 @@
 import React from "react";
 import { useState } from "react";
-import dayjs from "dayjs";
 const YearPicker = ({ onChange }) => {
   const [selectedYear, setSelectedYear] = useState("2016");
 
